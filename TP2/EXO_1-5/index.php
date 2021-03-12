@@ -1,7 +1,9 @@
 <?php
 require_once('template_header.php');
 ?>
-
+<?php
+require_once('template_footer.php');
+?>
 
 <doctype html>
     <html>
@@ -19,7 +21,7 @@ require_once('template_header.php');
           </ul>
         </nav>
         <article>
-          <h2>Etudiant-ingénieur à la recherche d'un stage de 4 mois durant lequel je serai amené à:</h2>
+          <h2>Etudiant-ingénieur à la recherche d'un stage de 4 mois. Voici un extrait de mon CV:</h2>
           <section>Stage L3 chez TEYLIFE (start-up) : Développement d’une application mobile, Gestion de projets via logiciel, présentation de la start-up pour intégrer Station F
 </section>
           <section>Projet : Conception d’un système d’asservissement permettant l’aide au déplacement des racks à ski</section>
