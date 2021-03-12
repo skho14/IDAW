@@ -32,4 +32,11 @@ require_once('template_footer.php');
         </article>
         <footer>N'hésitez pas à consulter mon CV ou me contacter si vous voulez en savoir plus.</footer>
       </body>
-    </html>
+    
+
+      </body>
+</html>
+</body>
+</html>
+
+
