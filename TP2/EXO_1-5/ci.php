@@ -23,3 +23,8 @@ require_once('template_header.php');
         </article>
     </body>
 </html>
+
+<?php
+require_once('template_footer.php');
+?>
+

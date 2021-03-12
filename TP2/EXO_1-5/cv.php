@@ -1,3 +1,9 @@
+<?php
+require_once('template_header.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,3 +24,8 @@
         </article>
     </body>
 </html>
+
+<?php
+require_once('template_footer.php');
+?>
+
