@@ -1,9 +1,8 @@
 <?php
 require_once('template_header.php');
 ?>
-<?php
-require_once('template_footer.php');
-?>
+
+
 
 <doctype html>
     <html>
@@ -13,13 +12,11 @@ require_once('template_footer.php');
       </head>
       <body>
         <h1>Qui suis-je ?</h1>
-        <nav class="menu">
-          <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="ci.html">Centre d'intérêts</a></li>
-          </ul>
-        </nav>
+        <?php
+require_once('template_menu.php');
+renderMenuToHTML('index');
+?>
+
         <article>
           <h2>Etudiant-ingénieur à la recherche d'un stage de 4 mois. Voici un extrait de mon CV:</h2>
           <section>Stage L3 chez TEYLIFE (start-up) : Développement d’une application mobile, Gestion de projets via logiciel, présentation de la start-up pour intégrer Station F
@@ -34,9 +31,8 @@ require_once('template_footer.php');
       </body>
     
 
-      </body>
-</html>
-</body>
-</html>
+<?php
+require_once('template_footer.php');
+?>
 
 
