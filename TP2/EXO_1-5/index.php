@@ -6,9 +6,7 @@
     $currentPageId = $_GET['page'];
   }
 ?>
-<header class="bandeau_haut">
-<h1 class="titre">Sam KHOSROWSHAHI</h1>
-</header>
+
 <?php
   renderMenuToHTML($currentPageId);
 ?>
