@@ -27,3 +27,4 @@ function renderMenuToHTML($currentPageId,$currentLangage) {
     </u1></nav>";
 }
 ?>
+
