@@ -19,6 +19,7 @@
     require_once("error.php");
 ?>
 </section>
+
 <?php
   require_once("template_footer.php");
 ?>

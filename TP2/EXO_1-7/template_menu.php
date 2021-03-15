@@ -5,7 +5,8 @@ $mymenu = array(
 // idPage titre
 'index' => array( 'Accueil' ),
 'cv' => array( 'Cv' ),
-'ci' => array('Mes Projets')
+'ci' => array('Mes Projets'),
+'contact'=> array( 'Contact' )
 );
 
 
