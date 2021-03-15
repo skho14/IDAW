@@ -1,12 +1,3 @@
-<nav class="menu">
-          <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="ci.html">Centre d'intérêts</a></li>
-          </ul>
-</nav>
-
-
 <?php
 function renderMenuToHTML($currentPageId) {
 // un tableau qui d\'efinit la structure du site
