@@ -1,28 +1,29 @@
+
 <?php
-function renderMenuToHTML($currentPageId) {
-// un tableau qui d\'efinit la structure du site
-$mymenu = array(
-// idPage titre
-'index' => array( 'Accueil' ),
-'cv' => array( 'Cv' ),
-'ci' => array('Mes Projets'),
-'contact'=> array( 'Contact' )
-);
+function renderMenuToHTML($currentPageId,$currentLangage) {
+    $mymenu = array(
+        'accueil' => array( 'Accueil', 'Home'),
+        'cv' => array( 'CV', 'Resume'),
+        'ci' => array('Mes hobbies', 'My hobbies'),
+        'contact'=> array( 'Contact' , 'Contact' )
+    );
 
-
-
-
-echo "<nav class=\"menu\">";
-
-foreach($mymenu as $pageId => $pageParameters) {
-echo "<u1>
-        <li><a href=index.php?page=$pageId>$pageParameters[0]</a></li>
-    </u1>";
-
-}
-echo "</nav>";
+    $currentLangageIndex=1;
+    if ($currentLangage == 'fr')
+        $currentLangageIndex=0;
+    
+    echo "<nav class=\"menu\"><u1>";
+    foreach($mymenu as $pageId => $pageParameters) {
+        echo "<li><a ";
+        if ($currentPageId==$pageId)
+            echo "class=\"selected\"";
+        echo "href=index.php?page=$pageId&lang=$currentLangage>$pageParameters[$currentLangageIndex]</a></li>";
+    }
+    echo "</u1></nav>
+    <nav class=\"langue\">
+    <ul>
+    <a href=index.php?page=$currentPageId&lang=en>Anglais</a>;
+    <a href=index.php?page=$currentPageId&lang=fr>Français</a>
+    </u1></nav>";
 }
 ?>
-
-
-
