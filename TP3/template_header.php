@@ -8,7 +8,7 @@
 </div>
 
 <div class="topnav">
-  <a href="#">CV</a>
+  <a href="CV_DataScience_2021.pdf">CV</a>
   <a href="https://www.linkedin.com/in/sam-khosrowshahi-a70953190/">LinkedIn</a>
   
 </div>
