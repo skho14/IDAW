@@ -20,6 +20,10 @@ if(isset($_GET['css'])) {
   $currentStyle = $_GET['css'];
   setcookie("cstyle", $currentStyle, time()+3600);
 }
+
+if(isset($_COOKIE['cstyle'])){
+        $currentStyle = $_COOKIE['cstyle'];
+    }
 ?>
 
 
