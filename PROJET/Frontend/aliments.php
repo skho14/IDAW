@@ -1,6 +1,36 @@
+
 <?php
-require_once("template_header.php")
+require_once("template_header.php");
+$servname = 'localhost';
+$dbname = 'imangermieux';
+$user = 'root';
+$pass = 'root';
+  
+//Essayer de l'afficher 
+//  try{
+//    $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
+//    $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//    $nom = $dbco -> prepare("SELECT * FROM Aliments");
+//    $nom -> execute();
+
+//    $resultatnom = $nom -> fetchAll(PDO::FETCH_ASSOC);
+
+//    $inscremant=0;
+//    foreach($resultatnom as $numbers => $informationsNom){
+//      echo "<tr><td>
+//      $informationsNom[Nom] </td><td>
+//      $informationsNom[Type] </td>";
+//      echo "</td><td> <button onclick=\"edit($informationsNom[Code]-1)\">Edit</button></td>"
+
+//    }
+    
+//  }
 ?>
+
+
+
+
+
 
 <h1> Ajout aliment </h1>
 
