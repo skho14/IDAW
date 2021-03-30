@@ -18,23 +18,19 @@ require_once("template_header.php");
             <?php
 
             $servname = 'localhost';
-            $dbname = 'imangermieux';
+            $dbname = 'imanger';
             $user = 'root';
             $pass = 'root';
            
-          
             try
             {
-              // On se connecte à MySQL
+
               $bdd = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",  $user, $pass);
             }
             catch(Exception $e)
             {
-              // En cas d'erreur, on affiche un message et on arrête tout
                     die('Erreur : '.$e->getMessage());
             }
-
-
             $reponse = $bdd->query('SELECT Nom ,Type  FROM Aliments');
 
             while ($donnees = $reponse->fetch())
@@ -49,7 +45,7 @@ require_once("template_header.php");
             <?php
             }
 
-            $reponse->closeCursor(); // Termine le traitement de la requête
+            $reponse->closeCursor();
 
             ?>
             </tbody>
@@ -64,6 +60,10 @@ require_once("template_header.php");
 
 <form id="ajoutAliment" action="../Backend/Add_Aliment.php" method="POST">
   <table>
+  <tr>
+      <th>Code </th>
+      <td><input type="text" name="Code"></td>
+    </tr>
     <tr>
       <th>Nom </th>
       <td><input type="text" name="nom"></td>

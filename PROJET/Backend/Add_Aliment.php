@@ -4,7 +4,7 @@
 
 <?php
     $servname = 'localhost';
-    $dbname = 'imangermieux';
+    $dbname = 'imanger';
     $user = 'root';
     $pass = 'root';
     
