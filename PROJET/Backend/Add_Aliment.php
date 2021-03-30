@@ -27,6 +27,6 @@
             
 ?>
 
-<p>Le nouvel aliment ajouté est <?php echo $_POST['name']?></p>
+<p>Le nouvel aliment ajouté est <?php echo $_POST['nom']?></p>
 
 <a href="../Frontend/aliments.php">Mes Aliments</a>
