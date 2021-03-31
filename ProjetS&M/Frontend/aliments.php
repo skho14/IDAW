@@ -29,7 +29,7 @@ require_once('template_header.php');
             let currentMaxId = 1; 
             let aliments = [];
             let currentEditedFoodId =-1;
-            let urlBackendPrefix = "http://localhost:8888/Projet_Y/Backend/";
+            let urlBackendPrefix = "http://localhost:8888/IDAW/ProjetS&M/Backend/";
             
             $(document).ready(function(){
                 $.getJSON(urlBackendPrefix+"afficheAliment.php", function(data){ 

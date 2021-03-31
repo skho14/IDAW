@@ -1,8 +1,7 @@
-  
 <?php
 
 $servname = 'localhost';
-$dbname = 'imangermieux';
+$dbname = 'imanger';
 $user = 'root';
 $pass = 'root';
 
@@ -22,9 +21,4 @@ try{
 catch(PDOException $e){
   echo "Erreur : " . $e->getMessage();
 }
-
-            
 ?>
-
-
-           
