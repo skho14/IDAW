@@ -46,21 +46,18 @@ require_once('template_header.php');
 
             function AjaxEnvoieAliment(aliment){
                 $.ajax({
-                        //L'URL de la requête 
+                    
+                        method: "POST",
+                        
                         url: urlBackendPrefix+"addAliment.php",
 
-                        //La méthode d'envoi (type de requête)
-                        method: "POST",
 
-                        //Le format de réponse attendu
                         dataType : "json",
                         data : aliment
                     })
-                    //Ce code sera exécuté en cas de succès - La réponse du serveur est passée à done()
-                    /*On peut par exemple convertir cette réponse en chaine JSON et insérer
-                    * cette chaine dans un div id="res"*/
+                    
                     .always(function(response){
-                        //let data = JSON.stringify(response);
+                        let data = JSON.stringify(response);
                         console.log(response);
                     });
             }
@@ -70,7 +67,7 @@ require_once('template_header.php');
                 $("#IDtype").val(type);
 
             }
-
+            
             
     
 
